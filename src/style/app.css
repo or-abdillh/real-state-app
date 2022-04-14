@@ -7,3 +7,7 @@
 span, button {
 	user-select: none;
 }
+
+.container {
+	@apply w-full lg:w-5/12 xl:w-4/12 lg:mx-auto p-5 md:p-10;
+}

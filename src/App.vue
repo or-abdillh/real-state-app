@@ -1,5 +1,5 @@
 <template>
-  <main class="app">
+  <main class="app container">
     <router-view></router-view>
     <BottomBar />
   </main>
@@ -8,7 +8,7 @@
 <style scoped>
 
 .app {
-  @apply w-full min-h-screen lg:w-5/12 xl:w-4/12 lg:mx-auto md:px-12 p-5 bg-[#FAFAFA];
+  @apply min-h-screen bg-[#FAFAFA];
 }
 
 </style>
