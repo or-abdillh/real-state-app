@@ -8,7 +8,7 @@
 }
 
 .active {
-  @apply duration-300 grid place-items-center text-gray-100 bg-gradient-to-r from-yellow-400 to-yellow-600 ring-4 ring-white;
+  @apply duration-300 grid place-items-center text-gray-100 bg-gradient-to-r from-blond to-yellow-500 ring-4 ring-white;
   transform: translateY(-70%);
   width: 60px;
   height: 60px;
