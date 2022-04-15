@@ -3,8 +3,8 @@
     <template v-for="(item, x) in category" :key="x">
       <div
         @click="current = item"
-        :class="current === item ? 'bg-blue-500 rounded-xl text-gray-50' : ''"
-        class="w-4/12 duration-300 grid place-items-center text-xl py-5 font-medium text-gray-500">
+        :class="current === item ? 'bg-blue-500 rounded-xl text-gray-50' : 'text-gray-500'"
+        class="w-4/12 duration-300 grid place-items-center text-xl py-5 font-medium">
         {{ item }}
      </div>
     </template>

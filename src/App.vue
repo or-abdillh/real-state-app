@@ -8,7 +8,7 @@
 <style scoped>
 
 .app {
-  @apply min-h-screen bg-[#FAFAFA];
+  @apply pb-20 min-h-screen bg-[#FAFAFA];
 }
 
 </style>

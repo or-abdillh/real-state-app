@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         'buff': '#F9DF8A',
         'blond': '#FBEFC3'
+      },
+      fontSize: {
+        'xxs': '.65rem'
       }
     },
   },
