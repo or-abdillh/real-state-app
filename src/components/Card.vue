@@ -1,19 +1,19 @@
 <template>
-  <section class="p-2 min-w-[45%] rounded-xl bg-white shadow-lg">
+  <section class="p-2 min-w-[65%] rounded-xl bg-white">
     <div class="relative">
       <span class="absolute top-3 right-3 text-xxs bg-gray-800 bg-opacity-75 text-gray-50 px-2 py-1 rounded-lg border border-gray-400">
         <i class="fa fa-star text-yellow-600 mr-1"></i>
         {{ source.rate }}
       </span>
-      <img :src="source.thumbnail" class="z-10 w-full rounded-xl" alt="image">
+      <img :src="source.thumbnail" class="z-10 w-full rounded-xl shadow-lg" alt="image">
     </div>
     <div class="mt-3 p-1">
-      <h1 class="font-medium text-sm text-gray-700">{{ source.name }}</h1>
-      <p class="mb-2 text-xs text-gray-400">{{ source.place }}</p>
-      <span class="text-lg font-medium text-blue-500">
-        <i class="fa fa-dollar-sign"></i>
+      <h1 class="font-medium text-base text-gray-700">{{ source.name }}</h1>
+      <p class="mb-2 text-sm text-gray-400">{{ source.place }}</p>
+      <span class="text-base font-medium text-blue-500">
+        <i class="fa fa-dollar-sign text-xs"></i>
         {{ source.price }}
-        <small class="text-xs">/per month</small>
+        <small class="text-sm text-gray-300">/per month</small>
       </span>
     </div>
   </section>

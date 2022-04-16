@@ -3,6 +3,17 @@
     <HeaderHome />
     <Category />
     <Carousell :source="highlights" />
+    <section class="mt-6 text-gray-700 mb-5">
+      <div class="flex justify-between">
+        <h1 class="font-semibold text-xl">Nearby To You</h1>
+        <i class="fa fa-ellipsis-h"></i>
+      </div>
+      <div>
+        <template v-for="item in highlights" :key="item.id">
+          <List :source="item" />
+        </template>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -11,6 +22,7 @@
 import HeaderHome from '@/components/HeaderHome.vue'
 import Category from '@/components/Category.vue' 
 import Carousell from '@/components/Carousell.vue'
-import highlights from '@/contents/higlights.ts'
+import List from '@/components/List.vue'
+import highlights from '@/contents/highlights.ts'
 
 </script>
