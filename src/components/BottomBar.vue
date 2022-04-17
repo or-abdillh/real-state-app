@@ -35,5 +35,11 @@
 import { ref } from 'vue'
 import menu from '@/contents/menu.ts'
 
+const props = defineProps({
+  title: {
+    type: String
+  }
+})
+
 const menuActive: any = ref(menu[0].name)
 </script>

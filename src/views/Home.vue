@@ -3,7 +3,7 @@
     <HeaderHome />
     <Category />
     <Carousell :source="highlights" />
-    <section class="mt-6 text-gray-700 mb-5">
+    <section class="mt-5 text-gray-700 mb-5">
       <div class="flex justify-between">
         <h1 class="font-semibold text-xl">Nearby To You</h1>
         <i class="fa fa-ellipsis-h"></i>

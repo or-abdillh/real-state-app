@@ -1,6 +1,9 @@
 <template>
   <section class="mt-3 w-full bg-white rounded-xl flex items-center gap-5 p-3">
-    <img :src="source.thumbnail" class="w-5/12 rounded-xl shadow-lg" />
+    <div class="w-5/12 relative">
+      <Rating :value="source.rate" />
+      <img :src="source.thumbnail" class="w-full rounded-xl shadow-lg" />
+    </div>
     <div>
       <h1 class="text-lg font-medium text-gray-700 mb-1">{{ source.name }}</h1>
       <p class="text-gray-400 font-medium text-sm mb-2">{{ source.place }}</p>
@@ -13,9 +16,11 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 
-const props = defineProps({
+import Rating from '@/components/Rating.vue'
+
+const props: any = defineProps({
   source: {
     type: Object
   }
