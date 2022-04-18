@@ -19,6 +19,6 @@ const category: string[] = [
   'Buy', 'Rent', 'Sell'
 ]
 
-const current: object = ref(category[0])
+const current: any = ref(category[0])
 
 </script>

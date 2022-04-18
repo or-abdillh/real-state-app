@@ -20,10 +20,10 @@
 
 import Rating from '@/components/Rating.vue'
 
-const props: any = defineProps({
-  source: {
-    type: Object
-  }
-})
+interface Props {
+  source: object
+}
+
+const props: any = defineProps<Props>()
 
 </script>

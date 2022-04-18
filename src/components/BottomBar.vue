@@ -4,7 +4,7 @@
 }
 
 .bottom-bar {
-  @apply bg-[#FFFFFF] flex justify-between w-full px-6 pt-4 rounded-t-lg lg:w-5/12 xl:w-4/12 lg:mx-auto;
+  @apply bg-[#FFFFFF] flex justify-between w-full px-6 pt-4 rounded-t-lg;
 }
 
 .active {
@@ -17,7 +17,7 @@
 
 <template>
   <section class="wrapper">
-    <section class="bottom-bar">
+    <section class="container bottom-bar">
       <template v-for="(item, x) in menu" :key="x">
         <div
           @click="menuActive = item.name"

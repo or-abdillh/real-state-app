@@ -9,5 +9,5 @@ span, button {
 }
 
 .container {
-	@apply w-full lg:w-5/12 xl:w-4/12 lg:mx-auto p-5 md:p-10;
+	@apply w-full md:w-8/12 lg:w-5/12 xl:w-4/12 md:mx-auto p-5 ;
 }

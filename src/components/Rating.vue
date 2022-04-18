@@ -5,12 +5,11 @@
   </span>
 </template>
 
-<script setup lang="ts">
+<script setup>
 
 const props = defineProps({
   value: {
-    type: Number,
-    default: 0
+    type: Number
   }
 })
 

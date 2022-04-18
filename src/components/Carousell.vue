@@ -18,12 +18,11 @@
 <script setup lang="ts"> 
   
 import Card from '@/components/Card.vue'
-   
-const props = defineProps({
-  source: {    
-    type: Array,
-    default: {}
-  }    
-})   
+
+interface Props {
+  source: object[]
+}
+
+const props = defineProps<Props>()   
   
 </script>   
